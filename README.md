@@ -53,10 +53,6 @@ Run the following command:
 
 streamlit run app.py
 
-Then open the browser and go to:
-
-http://localhost:8501
-
 ## Usage
 
 1. Set a budget for expenses.
@@ -71,3 +67,4 @@ This project demonstrates the practical use of Python programming concepts such 
 ## Conclusion
 
 The Student Expense Tracker helps students monitor their spending habits and maintain better control over their finances. It provides a simple and practical solution for managing daily expenses using Python and Streamlit.
+
