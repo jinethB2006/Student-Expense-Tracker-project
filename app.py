@@ -3,7 +3,9 @@ from expense_manager import load_data,add_expense,save_budget,load_budget
 from expense_manager import load_data,add_expense,save_budget,load_budget,clear_expenses
 from datetime import date
 
-st.title("Student Expense Tracker")
+st.title("TrackMySpend")
+
+st.subheader("Student Expense Tracker")
 
 st.header("Monthly Budget")
 
@@ -55,3 +57,4 @@ remaining=budget-total
 
 
 st.write("Remaining Budget:",remaining)
+
