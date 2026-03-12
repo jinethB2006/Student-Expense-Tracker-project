@@ -37,4 +37,8 @@ def load_budget():
         return 0
 
     with open(BUDGET_FILE,"r") as f:
-        return int(f.read())
+        return int(f.read()) 
+
+def clear_expenses():
+    df=pd.DataFrame(columns=["Date","Category","Amount","Note"])
+    df.to_csv(FILE_PATH,index=False)
