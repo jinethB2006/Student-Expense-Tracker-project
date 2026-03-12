@@ -1,4 +1,4 @@
-# Student Expense Tracker
+# TrackMySpend – Student Expense Tracker
 
 ## Live Application
 
@@ -75,5 +75,6 @@ This project demonstrates the practical use of Python programming concepts such 
 ## Conclusion
 
 The Student Expense Tracker helps students monitor their spending habits and maintain better control over their finances. It provides a simple and practical solution for managing daily expenses using Python and Streamlit.
+
 
 
