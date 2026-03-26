@@ -6,46 +6,68 @@ You can access the deployed web application here:
 
 https://trackmyspend.streamlit.app
 
+---
+
 ## Project Description
 
-The Student Expense Tracker is a web application built using Python and Streamlit that helps students manage their daily expenses and track their spending. The application allows users to record expenses, categorize them, and monitor how much of their budget remains.
+TrackMySpend is a web-based student expense tracking application built using Python and Streamlit. It allows users to manage daily expenses, set budgets, and monitor spending in real time.
 
-This project demonstrates how Python programming concepts can be applied to create a practical tool for personal financial management.
+This version of the application supports multiple users, where each user can securely manage their own data.
+
+---
 
 ## Problem Statement
 
-Many students find it difficult to track their daily spending. Small expenses such as food, travel, or stationery often go unnoticed, which can lead to overspending. Without a simple tracking system, students may lose control of their budget and find it difficult to understand where their money is being spent.
+Many students find it difficult to track their daily spending. Small expenses such as food, travel, or stationery often go unnoticed, which can lead to overspending.
+
+Without a proper system, students may lose control of their budget and find it difficult to understand where their money is being spent.
+
+---
 
 ## Proposed Solution
 
-The Student Expense Tracker solves this problem by providing a simple system where students can record and monitor their expenses. Users can set a budget, add expense details, and view their total spending. The application automatically calculates the remaining budget, helping students make better financial decisions.
+TrackMySpend provides a simple system where users can record and monitor their expenses. Each user can set a budget, add expense details, and view their total spending.
+
+The system calculates the remaining budget automatically and ensures that each user’s data is stored separately.
+
+---
 
 ## Features
 
-* Set and store a budget
-* Add daily expenses with category and notes
-* View all recorded expenses
-* Calculate total spending
-* Display remaining budget after expenses
+- User login and signup system
+- Multi-user support
+- Set and manage personal budget
+- Add daily expenses with category and notes
+- View all recorded expenses
+- Calculate total spending
+- Display remaining budget
+- Clear expense history
+
+---
 
 ## Technologies Used
 
-* Python
-* Streamlit
-* Pandas
-* CSV file for data storage
+- Python
+- Streamlit
+- Pandas
+- SQLite
+
+---
 
 ## Project Structure
 
-student-expense-tracker
+student-expense-tracker/
 │
 ├── app.py
+├── auth.py
 ├── expense_manager.py
 ├── requirements.txt
 ├── README.md
-└── data
-  ├── expenses.csv
-  └── budget.txt
+│
+└── data/
+    └── data.db
+
+---
 
 ## Installation
 
@@ -53,28 +75,42 @@ Install the required libraries:
 
 pip install -r requirements.txt
 
+---
+
 ## Running the Application
 
 Run the following command:
 
-streamlit run app.py 
+streamlit run app.py
 
+Then open:
 
+http://localhost:8501
+
+---
 
 ## Usage
 
-1. Set a budget for expenses.
-2. Add expense details including date, category, amount, and notes.
-3. The application stores the data and displays all expenses.
-4. The system calculates the total spending and remaining budget automatically.
+1. Create an account or login.
+2. Set your monthly budget.
+3. Add expense details including date, category, amount, and notes.
+4. View all expenses.
+5. Track total spending and remaining budget.
+
+---
 
 ## Learning Outcome
 
-This project demonstrates the practical use of Python programming concepts such as functions, file handling, modular programming, and basic web application development using Streamlit.
+This project demonstrates:
+
+- Multi-user application development
+- Database integration using SQLite
+- Session management
+- Modular programming in Python
+- Web app development using Streamlit
+
+---
 
 ## Conclusion
 
-The Student Expense Tracker helps students monitor their spending habits and maintain better control over their finances. It provides a simple and practical solution for managing daily expenses using Python and Streamlit.
-
-
-
+TrackMySpend helps students monitor their spending habits and maintain better control over their finances. It provides a simple and practical solution for managing daily expenses using Python and Streamlit.
