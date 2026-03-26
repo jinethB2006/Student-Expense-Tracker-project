@@ -83,10 +83,6 @@ Run the following command:
 
 streamlit run app.py
 
-Then open:
-
-http://localhost:8501
-
 ---
 
 ## Usage
