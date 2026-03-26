@@ -9,6 +9,18 @@ def get_conn():
 def hash_pass(p):
     return hashlib.sha256(p.encode()).hexdigest()
 
+def create_users_table():
+    with get_conn() as conn:
+        c=conn.cursor()
+        c.execute("""
+        create table if not exists users(
+        id integer primary key,
+        username text,
+        password text)
+        """)
+
+create_users_table()
+
 def signup(u,p):
     with get_conn() as conn:
         c=conn.cursor()
